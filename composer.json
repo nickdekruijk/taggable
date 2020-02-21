@@ -1,7 +1,8 @@
 {
     "name": "nickdekruijk/taggable",
     "keywords": [ "php", "laravel", "taggable", "tags", "tag", "model", "eloquent" ],
-    "description": "Make your Laravel models taggable",
+    "description": "Make your Laravel models taggable
+    ",
     "license": "MIT",
     "authors": [{
             "name": "Nick de Kruijk",
@@ -21,10 +22,7 @@
         "laravel": {
             "providers": [
                 "NickDeKruijk\\Taggable\\ServiceProvider"
-            ],
-            "aliases": {
-            	"Taggable": "NickDeKruijk\\Taggable\\TaggableFacade"
-            }
+            ]
         }
     }
 }
