@@ -7,7 +7,7 @@ return [
     | migrations
     |--------------------------------------------------------------------------
     |
-    | Run the included migration. Disable if you use your own migrations.
+    | Run the included migration. Disable if you use your own migrations
     |
     */
 
@@ -18,7 +18,7 @@ return [
     | tags_table
     |--------------------------------------------------------------------------
     |
-    | Table name to store tags in
+    | Table name for tags to use with the package migration
     |
     */
 
@@ -29,7 +29,7 @@ return [
     | taggables_table
     |--------------------------------------------------------------------------
     |
-    | Table name to store taggables in
+    | Table name for taggables to use with the package migration
     |
     */
 
