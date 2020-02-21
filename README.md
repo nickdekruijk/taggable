@@ -22,5 +22,20 @@ Then run the migration
 php artisan migrate
 ```
 
+## Usage
+Add the Taggable trait to your model:
+```php
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+use NickDeKruijk\Taggable\Taggable;
+
+class Product extends Model
+{
+    use Taggable;
+```
+
 ## License
 Admin is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
