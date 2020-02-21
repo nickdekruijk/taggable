@@ -1,7 +1,7 @@
 {
     "name": "nickdekruijk/taggable",
     "keywords": [ "php", "laravel", "taggable", "tags", "tag", "model", "eloquent" ],
-    "description": "Add a simple taggable to your Laravel project",
+    "description": "Make your Laravel models taggable",
     "license": "MIT",
     "authors": [{
             "name": "Nick de Kruijk",
