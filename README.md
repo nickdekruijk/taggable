@@ -37,5 +37,35 @@ class Product extends Model
     use Taggable;
 ```
 
+### Admin package integration
+If you are using [nickdekruijk/admin](https://github.com/nickdekruijk/admin) add this to your `config/admin.php` file to manage tags:
+```php
+        'tags' => [
+            'view' => 'admin::model',
+            'icon' => 'fa-tags',
+            'model' => 'NickDeKruijk\Taggable\Tag',
+            'index' => 'title',
+            'active' => 'active',
+            'orderBy' => 'sort',
+            'sortable' => true,
+            'treeview' => 'parent',
+            'columns' => [
+                'active',
+                'title',
+            ],
+        ],
+```
+And add a column to the model you made taggable:
+```php
+                'tags' => [
+                    'type' => 'pivot',
+                    'model' => 'NickDeKruijk\Taggable\Tag',
+                    'morph' => 'taggable',
+                    'scope' => 'getTree',
+                    'columns' => 'title',
+                    'treeview' => 'parent',
+                ],
+```
+
 ## License
 Admin is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
