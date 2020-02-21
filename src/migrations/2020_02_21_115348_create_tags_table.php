@@ -32,6 +32,6 @@ class CreateTagsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists(config('tags.taggables_table'));
+        Schema::dropIfExists(config('taggable.tags_table'));
     }
 }
