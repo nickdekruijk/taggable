@@ -1,11 +1,11 @@
 {
     "name": "nickdekruijk/taggable",
-    "keywords": [ "php", "laravel", "taggable", "tags", "tag", "model", "eloquent" ],
+    "keywords": ["php", "laravel", "taggable", "tags", "tag", "model", "eloquent"],
     "description": "Make your Laravel models taggable",
     "license": "MIT",
     "authors": [{
-            "name": "Nick de Kruijk",
-            "email": "git@nickdekruijk.nl"
+        "name": "Nick de Kruijk",
+        "email": "git@nickdekruijk.nl"
     }],
     "minimum-stability": "dev",
     "require": {
