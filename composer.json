@@ -1,0 +1,30 @@
+{
+    "name": "nickdekruijk/taggable",
+    "keywords": [ "php", "laravel", "taggable", "cart", "checkout" ],
+    "description": "Add a simple taggable to your Laravel project",
+    "license": "MIT",
+    "authors": [{
+            "name": "Nick de Kruijk",
+            "email": "git@nickdekruijk.nl"
+    }],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2.0"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "NickDeKruijk\\Taggable\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NickDeKruijk\\Taggable\\ServiceProvider"
+            ],
+            "aliases": {
+            	"Taggable": "NickDeKruijk\\Taggable\\TaggableFacade"
+            }
+        }
+    }
+}
