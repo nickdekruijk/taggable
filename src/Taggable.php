@@ -14,11 +14,11 @@ trait Taggable
 
     public function tags(): MorphToMany
     {
-        return $this->morphToMany(config('taggable.tag_model'), 'taggable')->orderBy(config('taggable.sort_tags_by'));
+        return $this->morphToMany(config('taggable.tag_model'), 'taggable', config('taggable.taggables_table'))->orderBy(config('taggable.sort_tags_by'));
     }
 
     public function activeTags(): MorphToMany
     {
-        return $this->morphToMany(config('taggable.tag_model'), 'taggable')->active();
+        return $this->morphToMany(config('taggable.tag_model'), 'taggable', config('taggable.taggables_table'))->active();
     }
 }
