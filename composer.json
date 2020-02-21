@@ -1,6 +1,6 @@
 {
     "name": "nickdekruijk/taggable",
-    "keywords": [ "php", "laravel", "taggable", "cart", "checkout" ],
+    "keywords": [ "php", "laravel", "taggable", "tags", "tag", "model", "eloquent" ],
     "description": "Add a simple taggable to your Laravel project",
     "license": "MIT",
     "authors": [{
