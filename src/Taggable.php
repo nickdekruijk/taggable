@@ -14,7 +14,7 @@ trait Taggable
 
     public function tags(): MorphToMany
     {
-        return $this->morphToMany(config('taggable.tag_model'), 'taggable')->orderBy('sort');
+        return $this->morphToMany(config('taggable.tag_model'), 'taggable')->orderBy(config('taggable.sort_tags_by'));
     }
 
     public function activeTags(): MorphToMany
