@@ -5,7 +5,7 @@
 [![License](https://poser.pugx.org/nickdekruijk/taggable/license)](https://packagist.org/packages/nickdekruijk/taggable)
 
 # Taggable
-Make your models taggable
+Make your Laravel models taggable
 
 ## Installation
 `composer require nickdekruijk/taggable`
