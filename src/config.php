@@ -59,6 +59,6 @@ return [
     |
     */
 
-    'sort_tags_by' => 'sort,title',
+    'sort_tags_by' => 'sort',
 
 ];
