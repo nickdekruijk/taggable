@@ -21,14 +21,16 @@ trait Taggable
     {
         return $this->morphToMany(config('taggable.tag_model'), 'taggable', config('taggable.taggables_table'))->active();
     }
-    
+
     public function scopeWithTags($query, $tags)
     {
-        if (!is_array($tags)) {
-            $tags = $tags->pluck('id')->toArray();
+        if ($tags && $tags->count()) {
+            if (!is_array($tags)) {
+                $tags = $tags->pluck('id')->toArray();
+            }
+            return $query->whereHas('tags', function ($q) use ($tags) {
+                return $q->whereIn('taggables.tag_id', $tags);
+            });
         }
-        return $query->whereHas('tags', function ($q) use ($tags) {
-            return $q->whereIn('taggables.tag_id', $tags);
-        });
     }
 }
