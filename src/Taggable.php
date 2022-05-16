@@ -24,7 +24,7 @@ trait Taggable
 
     public function scopeWithTags($query, $tags)
     {
-        if ($tags && $tags->count()) {
+        if ($tags && count($tags)) {
             if (!is_array($tags)) {
                 $tags = $tags->pluck('id')->toArray();
             }
